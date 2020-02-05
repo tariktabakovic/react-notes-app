@@ -1,1 +1,1 @@
-![Create Notes App in React](src/notesdiagram.png)
+![Create Notes App in React](notesdiagram.png)
