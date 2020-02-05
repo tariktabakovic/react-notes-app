@@ -8,6 +8,7 @@ class NotesApp extends React.Component{
     constructor(props){
         super(props);
         this.state= {
+            currentNoteId: '',
             searchText: 'This is the search text',
             notes: [
                 {
