@@ -48,8 +48,8 @@ class NotesApp extends React.Component{
 
     _getFilteredNotes=()=>{
         const filteredArray = this.state.notes.filter(note =>{
-            const titleDoesMatch = note.title.includes(this.state.searchText);
-            const copyDoesMatch = note.copy.includes(this.state.searchText);
+            const titleDoesMatch = note.title.toLowerCase().includes(this.state.searchText.toLowerCase());
+            const copyDoesMatch = note.copy.toLowerCase().includes(this.state.searchText.toLowerCase());
             return titleDoesMatch || copyDoesMatch;
         });
         return filteredArray;
