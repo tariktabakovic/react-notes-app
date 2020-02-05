@@ -10,7 +10,8 @@ function NotesListItem ({
         <li
         onClick={()=>{
             console.log(`You clicked ${id}`);
-            handleClick(id)
+            handleClick(id);
+            
         }}
         >{title}</li>
     );

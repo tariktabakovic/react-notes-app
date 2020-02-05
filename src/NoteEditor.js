@@ -1,8 +1,8 @@
 import React from 'react';
 
-function NoteEditor(){
+function NoteEditor({text}){
     return (
-        <textarea value= 'Lorem Ipsum Blahhhh blahhh blah'/>
+        <textarea text/>
     )
 }
 
