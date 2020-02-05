@@ -3,12 +3,14 @@ import React from 'react';
 
 function NotesListItem ({
     title,
-    id
+    id,
+    handleClick
 }){
     return (
         <li
         onClick={()=>{
-            console.log(`You clicked ${id}`)
+            console.log(`You clicked ${id}`);
+            handleClick(id)
         }}
         >{title}</li>
     );
