@@ -38,12 +38,21 @@ class NotesApp extends React.Component{
                     handleChange= {this._setSearchText}
                     text={this.state.searchText}/>
                 <NotesList 
-                    notes={this.state.notes}
+                    notes={this._getFilteredNotes()}
                     handleClick= {this._selectNote}
                 />
                 <NoteEditor />
             </div>
         )
+    }
+
+    _getFilteredNotes=()=>{
+        const filteredArray = this.state.notes.filter(note =>{
+            const titleDoesMatch = note.title.includes(this.state.searchText);
+            const copyDoesMatch = note.copy.includes(this.state.searchText);
+            return titleDoesMatch || copyDoesMatch;
+        });
+        return filteredArray;
     }
 
     _setSearchText= (searchText)=> {
