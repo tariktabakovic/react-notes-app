@@ -50,6 +50,14 @@ class NotesApp extends React.Component{
             console.log('update search text')
         });
     }
+
+    _selectNote = (currentNoteId)=>{
+        this.setState({
+            currentNoteId
+        }, ()=>{
+            console.log('Updated current id')
+        });
+    }
 }
 
 
