@@ -38,7 +38,9 @@ class NotesApp extends React.Component{
                     handleChange= {this._setSearchText}
                     text={this.state.searchText}/>
                 <NotesList 
-                    notes={this.state.notes}/>
+                    notes={this.state.notes}
+                    handleClick= {this._selectNote}
+                />
                 <NoteEditor />
             </div>
         )

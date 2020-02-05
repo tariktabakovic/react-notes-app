@@ -3,7 +3,8 @@ import NotesListItem from './NotesListItem';
 
 // notes is the prop
 function NotesList({
-    notes
+    notes,
+    handleClick
 }){
     return (
         <ul>
@@ -13,6 +14,7 @@ function NotesList({
                 title={note.title} 
                 id={note.id}
                 key={note.id}
+                handleClick= {handleClick}
                 />))
             }
         </ul>
