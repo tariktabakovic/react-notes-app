@@ -9,7 +9,7 @@ function SearchBar({
     return(
         <input 
         onChange={(event)=>{
-            handleChange(event.targetValue)
+            handleChange(event.target.value)
         }}
         value= {text}/>
     );

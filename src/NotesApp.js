@@ -17,12 +17,12 @@ class NotesApp extends React.Component{
                 },
                 {
                     id: 'b2',
-                    title: 'first note',
+                    title: 'second note',
                     copy: 'ba ba ba'
                 },
                 {
                     id: 'c3',
-                    title: 'first note',
+                    title: 'third note',
                     copy: 'ha ha ha'
                 }
             ]
