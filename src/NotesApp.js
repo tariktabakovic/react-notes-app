@@ -9,7 +9,7 @@ class NotesApp extends React.Component{
         super(props);
         this.state= {
             currentNoteId: '',
-            searchText: 'This is the search text',
+            searchText: '',
             notes: [
                 {
                     id: 'a1',
