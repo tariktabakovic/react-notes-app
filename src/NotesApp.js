@@ -42,18 +42,15 @@ class NotesApp extends React.Component{
                     handleClick= {this._selectNote}
                 />
                 <NoteEditor 
-                    // text={this._showNoteInNoteEditor}
+                    note={this._getNoteById()}
+                    handleChange={this._updateNote}
                 />
             </div>
         )
     }
 
-    // _showNoteInNoteEditor=(note)=>{
-    //     this.setState({
-    //         note
-            
-    //     })
-    // }
+    _getNoteById = () => this.state.notes.find( note => note.id === this.state.currentNoteId || {})
+    
 
     _getFilteredNotes=()=>{
         const filteredArray = this.state.notes.filter(note =>{
