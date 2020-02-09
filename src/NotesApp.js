@@ -78,7 +78,7 @@ class NotesApp extends React.Component{
     }
 
     _updateNote = (changedNote) =>{
-        console.table(changeNote);
+        console.table(changedNote);
         const updatedNotesArray = this.state.notes.map (note => {
             if (note.id !== this.state.currentNoteId){
                 return note;
