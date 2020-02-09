@@ -1,5 +1,8 @@
 import React from 'react';
 
+SearchBar.defaultProps = {
+    text: 'default search text'
+}
 // destructoring text instead of using props.text 
 function SearchBar({
     text, 
